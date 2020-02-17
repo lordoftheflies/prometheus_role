@@ -22,7 +22,7 @@ If you need an answer, you can either:
 #### Reporting bugs
 
 Before reporting a bug, please make sure it hasn't already been reported by visiting the
-[issue section](https://github.com/<class 'jinja2.utils.Namespace'>/prometheus_role/issues).
+[issue section](https://github.com/lordoftheflies/prometheus_role/issues).
 
 If the bug you found hasn't been reported yet, create a new issue and assign it the proper label(s).
 Besides this, there isn't any specific guideline on how the bugs should be reported, Just be sure
