@@ -1,0 +1,6 @@
+--- # prometheus_role/tests/travis_test.yml
+
+- hosts: localhost
+  become: true
+  roles:
+    - prometheus_role

@@ -1,0 +1,9 @@
+---
+- name: Converge
+  hosts: all
+  vars:
+    - prometheus_role_deployment_users_home: /root
+    - prometheus_role_testing_provider: lxd
+
+  roles:
+    - prometheus_role

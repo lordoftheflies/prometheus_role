@@ -1,0 +1,32 @@
+---
+# roles/prometheus_role/meta/main.yml
+
+dependencies:
+
+#  - role: lordoftheflies.resources
+#    resources_on_local : '{{ prometheus_role_resources_on_local }}'
+#    resources_on_remote: '{{ prometheus_role_resources_on_remote }}'
+
+#  - role: scaffold
+galaxy_info:
+  role_name: 'prometheus_role'
+  version: '1.0.0'
+  author: 'lordoftheflies'
+  description: 'Ansible Galaxy role for maintain prometheus_role.'
+  company: 'Cherubits'
+  license: MIT
+  min_ansible_version: '2.9'
+  platforms:
+    - name: Ubuntu
+      versions:
+        - xenial
+        - disco
+        - eon
+    - name: Debian
+      versions:
+        - wheezy
+  galaxy_tags:
+    - cherubits
+    - prometheus_role
+    - debian
+    - ubuntu
