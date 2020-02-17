@@ -10,8 +10,36 @@ feedback: true
 Self-managing role for maintain **Prometheus** instance/cluster. The role
 including automation scripts to the whole operation lifecycle.
 
+## Status
+
+[![Build Status](https://travis-ci.org/lordoftheflies/prometheus_role.svg?branch=master)](https://travis-ci.org/lordoftheflies/prometheus_role)
+
+## Description
+
+The `prometheus_role` is an Ansible role used to setup and maintain production grade services,
+including the whole operation lifecycle.
+
+## Roadmap
+
+* [ROADMAP.md](ROADMAP.md)
+
+<p>
+<details>
+<summary>Using in Playbooks</summary>
+
+#### Using in Playbooks
+
+To ensure ITIL several playbook tasks needed:
+* `install`: Installing the role
+* `purge`: Uninstalling the role
+* `configure`: Re-configure the role
+* `purge`: Uninstalling the role and erase configuration
+* `backup`: Backup data.
+* `export`: Export configuration and make available as a compressed bundle.
+
 ```plantuml
 @startuml
+caption Operation Workflow
 (*) --> ===b===
 ===b=== --> "Install\nPrometheus\nservers"
 ===b=== --> "Rollback previous\nhealthy state"
@@ -29,6 +57,20 @@ else
 ===e=== --> (*)
 @enduml
 ```
+
+</details>
+</p>
+
+<p>
+<details>
+<summary>Working with Ansible</summary>
+
+#### Working with Ansible
+
+Any ansible inventory contains a cluster or host where the role executed.
+
+Only the ansible-controller workstation need ansible. After execution of a playbook all 
+data collected to the ansible-controller.
 
 ```plantuml
 @startuml
@@ -54,21 +96,14 @@ a -u-> c
 @enduml
 ```
 
-## Status
-
-[![Build Status](https://travis-ci.org/lordoftheflies/prometheus_role.svg?branch=master)](https://travis-ci.org/lordoftheflies/prometheus_role)
-
-## Description
-
-The `prometheus_role` is an Ansible role used to setup and maintain production grade services,
-including the whole operation lifecycle.
-
-## Roadmap
-
-* [ROADMAP.md](ROADMAP.md)
+</details>
+</p>
 
 ## References
 
+* [Continuous delivery](#)
+* [Operator guide](#)
+* [Remote monitoring and diagnostics](#)
 * [docs.ansible.com](https://docs.ansible.com/)
 * [On Ansible Galaxy](https://galaxy.ansible.com/lordoftheflies/prometheus_role)
 
