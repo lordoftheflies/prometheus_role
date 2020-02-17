@@ -99,21 +99,11 @@ a -u-> c
 </details>
 </p>
 
-## References
+<p>
+<details>
+<summary>For Local Testing</summary>
 
-* [Continuous delivery](#)
-* [Operator guide](#)
-* [Remote monitoring and diagnostics](#)
-* [docs.ansible.com](https://docs.ansible.com/)
-* [On Ansible Galaxy](https://galaxy.ansible.com/lordoftheflies/prometheus_role)
-
-## Requirements
-
-### Production
-
-* Ansible
-
-### For Local Testing
+### For local testing
 
 * [Vagrant](https://www.vagrantup.com/) - (Tested using version 2.1.1)
 * Vagrant plugins:
@@ -123,6 +113,9 @@ a -u-> c
   * [vagrant-vbguest (0.15.2) - Recommended vagrant-vbguest](https://github.com/lordoftheflies/vagrant-vbguest)
 * [Virtual Box](https://www.virtualbox.org/)
   * Tested using Version 5.2.14 r123301 (Qt5.6.1)
+
+</details>
+</p>
 
 ## Variables
 
@@ -155,6 +148,22 @@ pass, fail, untested, unsupported
 
 | OS | Version | Distribution | Supported [^1](#) | Results  |
 | :--- | :---: | :---: | :---: | :---: |
+
+
+## References
+
+* [Continuous delivery](#)
+* [Operator guide](#)
+* [Remote monitoring and diagnostics](#)
+* [docs.ansible.com](https://docs.ansible.com/)
+* [On Ansible Galaxy](https://galaxy.ansible.com/lordoftheflies/prometheus_role)
+
+## Requirements
+
+### Production
+
+* Ansible
+
 
 
 ## Authors
